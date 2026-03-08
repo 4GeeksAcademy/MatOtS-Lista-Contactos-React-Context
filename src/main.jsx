@@ -7,14 +7,13 @@ import { StoreProvider } from './hooks/useGlobalReducer';  // Import the StorePr
 
 const Main = () => {
     return (
-        <React.StrictMode>  
+        <StoreProvider>
             {/* Provide global state to all components */}
-            <StoreProvider> 
-                {/* Set up routing for the application */} 
-                <RouterProvider router={router}>
-                </RouterProvider>
-            </StoreProvider>
-        </React.StrictMode>
+            {/* Set up routing for the application */}
+            <RouterProvider router={router}>
+            </RouterProvider>
+        </StoreProvider>
+
     );
 }
 
