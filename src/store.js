@@ -17,7 +17,7 @@ export default function storeReducer(store, action = {}) {
       return {
         ...store,
         contacts: store.contacts.filter(contact => contact.id != action.payload)
-      };
+      };BB
     case 'EDIT_CONTACT':
     default:
       throw Error('Unknown action.');

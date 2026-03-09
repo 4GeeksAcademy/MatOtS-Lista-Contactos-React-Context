@@ -9,6 +9,7 @@ export const ContactForm = (props) => {
     const [inputEmail, setInputEmail] = useState("");
     const [inputPhone, setInputPhone] = useState("");
     const [inputAddress, setInputAddress] = useState("");
+    console.log(inputName)
 
     const location = useLocation();
     const data = location.state;
@@ -123,7 +124,7 @@ export const ContactForm = (props) => {
                 <Link to="/" style={{ textDecoration: "none", display: "block", width: "max-content" }}>
                     <p>or get back to contacts</p>
                 </Link>
-                </form>
+            </form>
         </div>
     )
 }

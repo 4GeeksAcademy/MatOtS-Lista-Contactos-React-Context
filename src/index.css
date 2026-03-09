@@ -1,0 +1,10 @@
+.modalContent {
+    position: absolute;
+    bottom: 5rem;
+    left: 20rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 40vw;
+    background: white;
+}
